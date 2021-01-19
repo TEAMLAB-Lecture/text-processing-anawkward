@@ -24,5 +24,5 @@ def no_vowels(input_string):
             ex - "Ths s n xmpl."
 
     """
-    no_vowel_string = ''.join(filter(lambda x: x.lower() in ['a','e','i','o','u'], input_string))
+    no_vowel_string = ''.join(filter(lambda x: x.lower() not in ['a','e','i','o','u'], input_string))
     return no_vowel_string
